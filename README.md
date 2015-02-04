@@ -20,4 +20,9 @@ Apex を使用した住所複合項目および地理位置情報複合項目へ
 
 <img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150205/20150205024213.png" width="500px;" />
 
-<img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150205/20150205024926.png?1423072188" width="500px;" />
+<img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150205/20150205024926.png" width="500px;" />
+
+### CommonTestSetup
+@testSetupのデモクラスです。
+
+<img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150205/20150205030237.png" width="500px;" />
