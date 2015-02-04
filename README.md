@@ -26,3 +26,9 @@ Apex を使用した住所複合項目および地理位置情報複合項目へ
 @testSetupのデモクラスです。
 
 <img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150205/20150205030237.png" width="500px;" />
+
+
+## Lightning Component
+Lightningの開発では名前空間プレフィックスが不要になり、apexと同じように『c:』で宣言できるようになりました。
+
+<img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150205/20150205050844.png" width="500px;" />
