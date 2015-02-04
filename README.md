@@ -1,4 +1,4 @@
-# Spring15-Sample-Code
+# Salesforce Spring'15 Sample Code
 Spring'15 Pre-Releaseの環境で新機能を試してみました。  
   
 ## Apex  
