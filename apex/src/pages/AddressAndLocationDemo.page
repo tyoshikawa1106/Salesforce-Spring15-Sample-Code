@@ -1,0 +1,32 @@
+<apex:page controller="AddressAndLocationDemoController" showHeader="true" sidebar="false" id="page">
+    <div id="vf-page">
+        <apex:form id="form">
+            <!-- Address Block -->
+            <apex:pageBlock title="{!$ObjectType.Account.Label}" id="block">
+                <apex:pageBlockTable value="{!wrapperList}" var="item">
+                    <apex:column headerValue="{!$ObjectType.Account.Fields.Name.Label}">
+                        <apex:outputField value="{!item.account.Name}" />
+                    </apex:column>
+                    <apex:column headerValue="{!$ObjectType.Account.Fields.BillingCountry.Label}">
+                        <apex:outputText value="{!item.acctCountry}" />
+                    </apex:column>
+                    <apex:column headerValue="{!$ObjectType.Account.Fields.BillingPostalCode.Label}">
+                        <apex:outputText value="{!item.acctZipCode}" />
+                    </apex:column>
+                    <apex:column headerValue="{!$ObjectType.Account.Fields.BillingState.Label}">
+                        <apex:outputText value="{!item.acctState}" />
+                    </apex:column>
+                    <apex:column headerValue="{!$ObjectType.Account.Fields.BillingCity.Label}">
+                        <apex:outputText value="{!item.acctCity}" />
+                    </apex:column>
+                    <apex:column headerValue="{!$ObjectType.Account.Fields.BillingStreet.Label}">
+                        <apex:outputText value="{!item.acctStreet}" />
+                    </apex:column>
+                    <apex:column headerValue="{!$ObjectType.Account.Fields.MyLocation__c.Label}">
+                        <apex:outputText value="{!item.lat},{!item.lon}" />
+                    </apex:column>
+                </apex:pageBlockTable>
+            </apex:pageBlock>
+        </apex:form>
+    </div>
+</apex:page>
