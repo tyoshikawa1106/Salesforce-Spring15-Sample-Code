@@ -27,6 +27,11 @@ Apex を使用した住所複合項目および地理位置情報複合項目へ
 
 <img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150205/20150205030237.png" width="500px;" />
 
+### Chatter Message Trigger
+ユーザプロファイルにある『Chatter メッセージの管理』を有効にすることでChatterMessageトリガーを作成できるようになります。NGワードを判定したり、送信相手にToDoを作成するなどの使い方ができそうです。
+
+<img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150207/20150207173750.png" width="500px" />
+
 
 ## - Lightning Component -
 ### Hello World
