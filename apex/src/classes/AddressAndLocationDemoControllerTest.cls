@@ -1,7 +1,7 @@
 @isTest
 private class AddressAndLocationDemoControllerTest {
     
-    private static User testAdminUser = new User(Id = UserInfo.getUserId());
+    private static User testAdminUser = CommonTester.getLoginUser();
 
     /**
      * AddressAndLocationDemoControllerTest1
