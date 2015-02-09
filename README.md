@@ -61,3 +61,5 @@ Lightningの開発では名前空間プレフィックスが不要になり、ap
 Lightningに追加された新しいコンポーネントのデモ画面です。  
 
 <img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150209/20150209232908.png" width="500px;" />  
+
+<a href="https://www.youtube.com/watch?v=O2iIQb0qNGs" target="_blank">>> Demo Video</a>
