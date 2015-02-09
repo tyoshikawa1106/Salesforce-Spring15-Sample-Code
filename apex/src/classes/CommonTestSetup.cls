@@ -1,14 +1,9 @@
 @isTest
 private class CommonTestSetup {
     
-    // Admin User
     private static User testAdminUser = new User(Id = UserInfo.getUserId());
-    // 検証用の変数
     private static Id wkAccountId = null;
     
-    /**
-     * testMethod1
-     */
     @testSetup
     static void setup() {
         
