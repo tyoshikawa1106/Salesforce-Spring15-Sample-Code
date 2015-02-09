@@ -1,0 +1,120 @@
+<aura:component >
+    <div class="padding">
+        <form>
+            <!-- ui:inputText -->
+            <fieldset>
+                <ui:inputText aura:Id="ui-inputText" label="Input Text" value=""
+                                                    placeholder="Input Text" class="form-control" />
+            </fieldset>
+            <fieldset>
+                <label for="ui-outputText">output</label>
+                <ui:outputText aura:Id="ui-outputText" value="" class="form-control" />
+            </fieldset>
+            <hr/>
+            <!-- ui:inputCurrency -->
+            <fieldset>
+                <ui:inputCurrency aura:Id="ui-inputCurrency" label="Input Currency" value=""
+                                                    placeholder="Input Currency" class="form-control" />
+            </fieldset>
+            <fieldset>
+                <label for="ui-outputCurrency">output</label>
+                <ui:outputCurrency aura:Id="ui-outputCurrency" value="" class="form-control" />
+            </fieldset>
+            <hr/>
+            <!-- ui:inputSelect -->
+            <fieldset class="padding">
+                <label for="ui-inputSelect">Input Select</label>
+                <div>
+                    <ui:inputSelect multiple="false" class="uiInputSelect">
+                        <ui:inputSelectOption text="All Primary" label="All Contacts" value="true"/>
+                        <ui:inputSelectOption text="All Primary" label="All Primary"/>
+                        <ui:inputSelectOption text="All Secondary" label="All Secondary"/>
+                    </ui:inputSelect>
+                </div>
+            </fieldset>
+            <hr/>
+            <!-- ui:inputEmail -->
+            <fieldset>
+                <ui:inputEmail aura:Id="ui-inputEmail" label="Input Email" value=""
+                                                    placeholder="Input Email" class="form-control" />
+            </fieldset>
+            <fieldset>
+                <label for="ui-outputEmail">output</label>
+                <ui:outputEmail aura:Id="ui-outputEmail" value="" class="form-control" />
+            </fieldset>
+            <hr/>
+            <!-- ui:menu -->
+            <ui:menu >
+                <ui:menuTriggerLink aura:id="trigger" label="Opportunity Status"/>
+                <ui:menuList class="actionMenu" aura:id="actionMenu">
+                    <ui:actionMenuItem aura:id="item1" label="Open" click="{!c.updateTriggerLabel}"/>
+                    <ui:actionMenuItem aura:id="item2" label="Closed" click="{!c.updateTriggerLabel}"/>
+                    <ui:actionMenuItem aura:id="item3" label="Closed Won" click="{!c.updateTriggerLabel}"/>
+                </ui:menuList>
+            </ui:menu>
+            <hr/>
+            <!-- ui:message -->
+            <ui:message title="Info" severity="info" closable="true">
+                  This is an info message.
+            </ui:message>
+            <ui:message title="Error" severity="error" closable="true">
+                  This is an error message.
+            </ui:message>
+            <hr/>
+            <!-- ui:inputSecret -->
+            <fieldset>
+                <ui:inputSecret aura:Id="ui-inputSecret" label="Input Secret" value=""
+                                                    placeholder="Input Secret" class="form-control" />
+            </fieldset>
+            <fieldset>
+                <label for="ui-outputSecret">output</label>
+                <ui:outputText aura:Id="ui-outputSecret" value="" class="form-control" />
+            </fieldset>
+            <hr/>
+            <!-- ui:inputRadio -->
+            <fieldset>
+            	<ui:inputRadio value="true" label="Select?"/>
+            </fieldset>
+            <hr/>
+            <!-- ui:inputRichText -->
+            <fieldset>
+                <ui:inputRichText aura:Id="ui-inputRichText" label="Input RichText" value=""
+                                                    placeholder="Input RichText" class="form-control" />
+            </fieldset>
+            <fieldset>
+                <label for="ui-outputRichText">output</label>
+                <ui:outputRichText aura:Id="ui-outputRichText" value="" class="form-control" />
+            </fieldset>
+            <hr/>
+            <!-- ui:spinner -->
+            <fieldset>
+            	<ui:spinner aura:id="spinner"/>
+            </fieldset>
+            <hr/>
+            <!-- ui:inputTextArea -->
+            <fieldset>
+                <ui:inputTextArea aura:Id="ui-inputTextArea" label="Input TextArea" value=""
+                                                    placeholder="Input TextArea" class="form-control" />
+            </fieldset>
+            <fieldset>
+                <label for="ui-outputTextArea">output</label>
+                <ui:outputTextArea aura:Id="ui-outputTextArea" value="" class="form-control" />
+            </fieldset>
+            <hr/>
+            <!-- ui:inputURL -->
+            <fieldset>
+                <ui:inputURL aura:Id="ui-inputURL" label="Input URL" value=""
+                                                    placeholder="Input URL" class="form-control" />
+            </fieldset>
+            <fieldset>
+                <label for="ui-outputURL">output</label>
+                <ui:outputURL aura:Id="ui-outputURL" label="https://developer.salesforce.com/" value="https://developer.salesforce.com/" target="_new" class="form-control" />
+            </fieldset>
+            <hr/>
+            <!-- ui:button -->
+            <div class="btnMargin">
+                <ui:button label="Submit" press="{!c.myAction}" />
+            </div>
+        </form>
+    </div>
+</aura:component>

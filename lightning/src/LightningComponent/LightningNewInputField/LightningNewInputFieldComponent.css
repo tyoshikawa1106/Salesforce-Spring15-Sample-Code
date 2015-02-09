@@ -1,0 +1,14 @@
+.THIS {
+}
+.THIS.padding {
+    padding: 10px;
+}
+.THIS .btnMargin {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.THIS .uiInputSelect {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+}
