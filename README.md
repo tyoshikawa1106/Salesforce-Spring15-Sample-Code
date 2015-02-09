@@ -45,7 +45,7 @@ ApexのDMLOptions Classを利用した重複チェックです。
 
 <img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150209/20150209220227.png" width="500px" />
 
-## Test Class
+### Test Class
 今回用意したサンプルコードはテストクラスで簡単に動作確認してあります。
 
 <img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150209/20150209221120.png" width="500px" />
