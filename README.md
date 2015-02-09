@@ -32,6 +32,19 @@ Apex を使用した住所複合項目および地理位置情報複合項目へ
 
 <img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150207/20150207173750.png" width="500px" />
 
+### DMLOptionsDemo
+ApexのDMLOptions Classを利用した重複チェックです。
+
+<img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150209/20150209215329.png" width="500px" />
+
+次の一致ルールを作成して確認しています。
+
+<img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150209/20150209215659.png" width="500px" />
+
+重複ルールは次のような感じです。
+
+<img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150209/20150209220227.png" width="500px" />
+
 
 ## - Lightning Component -
 ### Hello World
