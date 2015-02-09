@@ -25,5 +25,10 @@
         var inputRichText = inputRichTextField.get("v.value");
         var outputRichTextField = component.find("ui-outputRichText");
         var outputRichText = outputRichTextField.set("v.value", inputRichText);
+        // ui:inputTextArea
+        var inputTextAreaField  = component.find("ui-inputTextArea");
+        var inputTextArea = inputTextAreaField.get("v.value");
+        var outputTextAreaField = component.find("ui-outputTextArea");
+        var outputTextArea = outputTextAreaField.set("v.value", inputTextArea);
     }
 })
