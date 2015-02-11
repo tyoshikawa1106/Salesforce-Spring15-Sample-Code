@@ -61,4 +61,37 @@ private class AddressAndLocationDemoControllerTest {
             System.assertEquals(cls.wrapperList[0].lon, account.MyLocation__Longitude__s);
         }
     }
+
+    /**
+     * AddressAndLocationDemoControllerTest3
+     */
+    static testMethod void AddressAndLocationDemoControllerTest3() {
+        
+        System.runAs(testAdminUser) {
+            
+            // Create Account
+            Account account = new Account(
+                 Name = 'Test Account'
+            );
+            insert account;
+
+            Test.startTest();
+            
+            // Test
+            AddressAndLocationDemoController cls = new AddressAndLocationDemoController();
+            
+            Test.stopTest();
+            
+            // Result
+            System.assertEquals(cls.wrapperList.size(), 1);
+            System.assertEquals(cls.wrapperList[0].account.Name, account.Name);
+            System.assertEquals(cls.wrapperList[0].acctCountry, null);
+            System.assertEquals(cls.wrapperList[0].acctZipCode, null);
+            System.assertEquals(cls.wrapperList[0].acctState, null);
+            System.assertEquals(cls.wrapperList[0].acctCity, null);
+            System.assertEquals(cls.wrapperList[0].acctStreet, null);
+            System.assertEquals(cls.wrapperList[0].lat, null);
+            System.assertEquals(cls.wrapperList[0].lon, null);
+        }
+    }
 }

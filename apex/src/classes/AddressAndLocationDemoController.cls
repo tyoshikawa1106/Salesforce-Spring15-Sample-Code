@@ -8,8 +8,8 @@ public class AddressAndLocationDemoController {
         
         List<Account> accounts = getAccounts();
         for (Account account : accounts) {
-            Address addr = account.BillingAddress;
-            Location loc = account.MyLocation__c;
+            Address addr = (account.BillingAddress != null) ? account.BillingAddress : new Address();
+            Location loc = (account.MyLocation__c != null) ? account.MyLocation__c : new Location();
             this.wrapperList.add(new Wrapper(account, addr, loc));
         }
     }
