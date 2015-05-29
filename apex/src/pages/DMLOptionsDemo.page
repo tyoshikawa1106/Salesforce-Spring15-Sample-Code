@@ -1,0 +1,16 @@
+<apex:page controller="DMLOptionsDemoController" showHeader="true" sidebar="false">
+    <div id="vf-page">
+        <apex:form id="form">
+            <apex:pageBlock title="{!$ObjectType.Account.Label}" mode="edit" tabStyle="Account">
+                <apex:pageMessages id="msg" />
+                <apex:pageBlockButtons location="bottom">
+                    <apex:commandButton value="    保存    " action="{!doSave}" reRender="form" />
+                </apex:pageBlockButtons>
+                <apex:pageBlockSection title="情報">
+                    <apex:inputField value="{!account.Name}" />
+                    <apex:inputField value="{!account.AccountNumber}" />
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </apex:form>
+    </div>
+</apex:page>

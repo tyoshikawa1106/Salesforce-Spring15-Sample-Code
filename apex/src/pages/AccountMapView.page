@@ -1,0 +1,14 @@
+<apex:page standardController="Account" showheader="true" sidebar="true" recordSetVar="accounts" readOnly="true" id="page">
+    <apex:form id="form">
+        <apex:pageBlock title="Account Map View" id="block">
+            <apex:map width="100%" height="450px" mapType="roadmap" zoomLevel="15" center="東京都,千代田区,丸の内２−７−２" id="accountMap">
+                <!-- Center Marker -->
+                <apex:mapMarker title="現在地" position="東京都,千代田区,丸の内２−７−２" />
+                <!-- Accounts Marker -->
+                <apex:repeat value="{!accounts}" var="account">
+                    <apex:mapMarker title="{! account.Name}" position="{!account.BillingStreet},{!account.BillingCity},{!account.BillingState}" />
+                </apex:repeat>
+            </apex:map>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

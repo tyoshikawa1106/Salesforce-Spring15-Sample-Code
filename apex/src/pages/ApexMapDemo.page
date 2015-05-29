@@ -1,0 +1,18 @@
+<apex:page standardController="Account" id="page">
+    <apex:form id="form">
+        <apex:pageBlock >
+            <apex:pageBlockSection title="Contacts For {! Account.Name }">
+                <!-- Contact List -->
+                <apex:dataList value="{! Account.Contacts }" var="contact">
+                    <apex:outputText value="{! contact.Name }" />
+                </apex:dataList>
+                <!-- Map -->
+                <apex:map width="600px" height="400px" mapType="roadmap" center="{!Account.BillingStreet},{!Account.BillingCity},{!Account.BillingState}">
+                    <apex:repeat value="{! Account.Contacts }" var="contact">
+                        <apex:mapMarker title="{! contact.Name }" position="{!contact.MailingStreet},{!contact.MailingCity},{!contact.MailingState}" />
+                    </apex:repeat>
+                </apex:map>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

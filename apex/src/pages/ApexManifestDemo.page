@@ -1,0 +1,25 @@
+<apex:page controller="ApexManifestDemoController" showHeader="true" sidebar="false" id="page">
+    <div id="vf-page">
+        <apex:form id="form">
+            <apex:pageBlock title="Tooling API Demo">
+                <apex:pageBlockTable value="{!wrapperList}" var="item">
+                    <apex:column headerValue="ID">
+                        <apex:outputText value="{!item.apexId}" />
+                    </apex:column>
+                    <apex:column headerValue="Namespace">
+                        <apex:outputText value="{!item.apexNamespace}" />
+                    </apex:column>
+                    <apex:column headerValue="Type">
+                        <apex:outputText value="{!item.apexType}" />
+                    </apex:column>
+                    <apex:column headerValue="TypeRef">
+                        <apex:outputText value="{!item.apexTypeRef}" />
+                    </apex:column>
+                    <apex:column headerValue="Name">
+                        <apex:outputText value="{!item.apexName}" />
+                    </apex:column>
+                </apex:pageBlockTable>
+            </apex:pageBlock>
+        </apex:form>
+    </div>
+</apex:page>

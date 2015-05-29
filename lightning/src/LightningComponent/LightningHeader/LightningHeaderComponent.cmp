@@ -1,0 +1,8 @@
+<aura:component>
+    <aura:attribute name="header" type="String" />
+    <aura:attribute name="detail" type="String" />
+    <div class="page-header page-header-anchor">
+        <h1>{!v.header}</h1>
+        <p>{!v.detail}</p>
+    </div>
+</aura:component>
