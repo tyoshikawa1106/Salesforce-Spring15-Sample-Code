@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Spring15-Sample-Code
 =======
 # Salesforce Spring'15 Sample Code
@@ -75,5 +74,4 @@ Lightningに追加された新しいコンポーネントのデモ画面です�
 <img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150209/20150209232908.png" width="500px;" />  
 
 <a href="https://www.youtube.com/watch?v=O2iIQb0qNGs" target="_blank">>> Demo Video</a>
->>>>>>> 90e75dae8f2baa2ebddc684fe9f4e3f6297bd014
 # lightning-empty-method-demo
