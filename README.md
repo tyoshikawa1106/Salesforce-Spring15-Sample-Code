@@ -58,18 +58,3 @@ Tooging APIに追加された『apexManifest』のデモです。『apexManifest
 ※ChatterMessageTriggerとToolingAPIはちょっとうまくいきませんでした。
 
 <img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150211/20150211184541.png" width="500px" />
-
-
-## - Lightning Component -
-### Hello World
-Lightningの開発では名前空間プレフィックスが不要になり、apexと同じように『c:』で宣言できるようになりました。
-
-<img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150205/20150205050844.png" width="500px;" />  
-
-### Lightning New Input Field Component
-Lightningに追加された新しいコンポーネントのデモ画面です。  
-
-<img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150209/20150209232908.png" width="500px;" />  
-
-<a href="https://www.youtube.com/watch?v=O2iIQb0qNGs" target="_blank">>> Demo Video</a>
-# lightning-empty-method-demo
